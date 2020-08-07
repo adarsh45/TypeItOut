@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <title>Type It Out</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-dark">
+        <a href="#" class="navbar-brand">
+            <b><span id="brand-logo">T</span></b>ype_It_Out
+        </a>
+    </nav>
+    <!-- PAGE -->
+    <div class="container-fluid text-center">
+        <!-- SHOW TEXT -->
+        <div class="container-fluid" id="show-text">
+            <h2 class="h2" id="text-to-type">type this line to find out how many words per minute or wpm you can type</h2>
+        </div>
+        <!-- TYPE TEXT -->
+        <div class="container-fluid" id="type-text">
+            <input type="text" name="type-text" class="text-center" id="edit-text">
+        </div>
+
+        <div class="row col-lg-12">
+
+            <div class ="row col-lg-3" id="result-box">
+                <div class="col-md-6" id="speed-box">
+                    <h3 class="h3">Speed</h3>
+                    <b><p class="value" id="speed-value">00</p></b>
+                    <p class="unit">WPM</p>
+                </div>
+                <div class="col-md-6" id="acc-box">
+                    <h3 class="h3">Accuracy</h3>
+                    <b><p class="value" id="acc-value">00.00</p></b>
+                    <p class="unit">%</p>
+                </div>
+            </div>
+
+        <!-- KEYBOARD -->
+            <div class="col-lg-9 text-center" id="keyboard">
+            <div class="row">
+                <div class="key top-key" id="esc">Esc</div>
+                <div class="key top-key" id="F1">F1</div>
+                <div class="key top-key"id="F2">F2</div>
+                <div class="key top-key" id="F3">F3</div>
+                <div class="key top-key" id="F1">F4</div>
+                <div class="key top-key"id="F2">F5</div>
+                <div class="key top-key" id="F3">F6</div>
+                <div class="key top-key" id="F1">F7</div>
+                <div class="key top-key"id="F2">F8</div>
+                <div class="key top-key" id="F3">F9</div>
+                <div class="key top-key" id="F1">F10</div>
+                <div class="key top-key"id="F2">F11</div>
+                <div class="key top-key" id="F3">F12</div>
+            </div>
+
+            <div class="row">
+                <div class="key normal-key" id="tilde">~</div>
+                <div class="key normal-key" id="num1">1</div>
+                <div class="key normal-key" id="num2">2</div>
+                <div class="key normal-key" id="num3">3</div>
+                <div class="key normal-key" id="num4">4</div>
+                <div class="key normal-key" id="num5">5</div>
+                <div class="key normal-key" id="num6">6</div>
+                <div class="key normal-key" id="num7">7</div>
+                <div class="key normal-key" id="num8">8</div>
+                <div class="key normal-key" id="num9">9</div>
+                <div class="key normal-key" id="num0">0</div>
+                <div class="key normal-key" id="num-dash">-</div>
+                <div class="key normal-key" id="num-plus">+</div>
+                <div class="key normal-key" id="backspace">Backspace</div>
+
+            </div>
+
+            <div class="row">
+                <div class="key normal-key" id="tab">Tab</div>
+                <div class="key normal-key" id="Q">Q</div>
+                <div class="key normal-key" id="W">W</div>
+                <div class="key normal-key" id="E">E</div>
+                <div class="key normal-key" id="R">R</div>
+                <div class="key normal-key" id="T">T</div>
+                <div class="key normal-key" id="Y">Y</div>
+                <div class="key normal-key" id="U">U</div>
+                <div class="key normal-key" id="I">I</div>
+                <div class="key normal-key" id="O">O</div>
+                <div class="key normal-key" id="P">P</div>
+                <div class="key normal-key" id="curley-start">{</div>
+                <div class="key normal-key" id="curley-close">}</div>
+                <div class="key normal-key" id="backslash">\</div>
+            </div>
+
+            <div class="row">
+                <div class="key normal-key" id="capslock">CapsLock</div>
+                <div class="key normal-key" id="A">A</div>
+                <div class="key normal-key" id="S">S</div>
+                <div class="key normal-key" id="D">D</div>
+                <div class="key normal-key" id="F">F</div>
+                <div class="key normal-key" id="G">G</div>
+                <div class="key normal-key" id="H">H</div>
+                <div class="key normal-key" id="J">J</div>
+                <div class="key normal-key" id="K">K</div>
+                <div class="key normal-key" id="L">L</div>
+                <div class="key normal-key" id="semicolon">;</div>
+                <div class="key normal-key" id="quote">"</div>
+                <div class="key normal-key" id="enter">Enter</div>
+            </div>
+
+            <div class="row">
+                <div class="key normal-key" id="shift">Shift</div>
+                <div class="key normal-key" id="Z">Z</div>
+                <div class="key normal-key" id="X">X</div>
+                <div class="key normal-key" id="C">C</div>
+                <div class="key normal-key" id="V">V</div>
+                <div class="key normal-key" id="B">B</div>
+                <div class="key normal-key" id="N">N</div>
+                <div class="key normal-key" id="M">M</div>
+                <div class="key normal-key" id="comma">,</div>
+                <div class="key normal-key" id="dot">.</div>
+                <div class="key normal-key" id="slash">/</div>
+                <div class="key normal-key" id="shift">Shift</div>
+            </div>
+
+            <div class="row">
+                <div class="key normal-key" id="control">Ctrl</div>
+                <div class="key normal-key" id="function">Fn</div>
+                <div class="key normal-key" id="cmd">Cmd</div>
+                <div class="key normal-key" id="alt">Alt</div>
+                <div class="key normal-key" id="space-bar"></div>
+                <div class="key normal-key" id="alt">Alt</div>
+                <div class="key normal-key" id="control">Ctrl</div>
+            </div>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <footer class="">
+        <a href="https://adarsh45.github.io" target="_blank">
+            <p>created with ❤️ by Adarsh Shete &copy; 2020</p>
+        </a>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Audiowide&family=Roboto&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #2B2525;
+}
+
+.container-fluid{
+    width: 95%;
+}
+/* heading navbar STARTS here */
+.navbar-dark{
+    background-color: #050505;
+    padding: 0.2em;
+}
+.navbar-brand{
+    margin-left: 2.5%;
+    font-family: 'Audiowide';
+    font-size: 2.1rem;
+    letter-spacing: 0.1em;
+    padding: 0 1.4em;
+}
+#brand-logo{
+    padding: 0;
+    color: #0090FF;
+    font-size: 1.4em;
+    font-family: 'Courgette', cursive;
+}
+/* heading navbar ENDS here */
+
+/* show-text STARTS here */
+#show-text{
+    margin-top: 1.6em;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+    font-family: 'Roboto', sans-serif;
+}
+
+#type-text #edit-text{
+    margin: 0.5em 0;
+    background-color: #2B2525;
+    color: transparent;
+    text-shadow: 0px 0px 1px #ffffff;
+    font-size: 2em;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #0090FF;
+}
+/* show-text ENDS here */
+
+/* result-box */
+#result-box{
+    padding: 0 0.5em;
+    font-family: 'Audiowide';
+    position: relative;
+    left: 0;
+    border-radius: 1.6em;
+    margin: 2em;
+    color: #ffffff;
+    background-color: #0090FF;
+}
+
+#speed-box{
+    margin: 1em 0;
+    border-right: 1px solid white;
+    padding: 1em;
+}
+#acc-box{
+    margin: 1em 0;
+    border-left: 1px solid white;
+    padding: 1em;
+}
+
+.value{
+    font-size: 2.4em;
+}
+.unit{
+    font-size: 1.6em;
+}
+
+
+/* keyboard STARTS here */
+#keyboard{
+    margin: 2rem;
+    padding: 20px 30px;
+    position: absolute;
+    right: 0;
+    background-color: #c1c1c1;
+    width: 920px;
+    border-radius: 20px;
+}
+.key{
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 6px;
+    margin: 5px;
+    padding: 10px;
+    box-shadow: 3px 5px #0090FF;
+    cursor: pointer;
+}
+.normal-key{
+    width: 50px;
+    height: 50px;
+}
+.top-key{
+    font-size: 0.8em;
+    padding: 2px;
+    width: 55px;
+    height: 30px;
+}
+
+#backspace{width: 100px;}
+#tab{width: 100px;}
+#capslock{width: 110px;}
+#enter{width: 100px;}
+#shift{width: 135px;}
+#space-bar{width: 400px;}
+
+footer a{
+    color: white;
+}
+footer a:hover{
+    text-decoration: none;
+    color: #0090FF;
+}
+
+footer{
+    font-size: 1.2em;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    padding: 0.1em 35%;
+}
+
+/* media queries */
+@media(min-width: 767px){
+    body{
+        display: hidden;
+    }
+}
